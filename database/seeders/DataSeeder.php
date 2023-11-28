@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
 class DataSeeder extends Seeder
@@ -17,12 +18,12 @@ class DataSeeder extends Seeder
             [
                 'name' => 'Oliver Sykes',
                 'email' => 'oliversykes@gmail.com',
-                'password' => 'oliver123'
+                'password' => Hash::make('oliver123')
             ],
             [
                 'name' => 'Admin',
                 'email' => 'admin1@gmail.test',
-                'password' => 'secret123'
+                'password' => Hash::make('secret123')
             ],
         ];
 
