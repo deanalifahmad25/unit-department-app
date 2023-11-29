@@ -26,7 +26,7 @@
                             <span class="font-medium">{{ $errors->first('error') }}</span>
                         </div>
                     @endif
-                    <form class="space-y-4 md:space-y-6" action="{{ url('/login') }}" method="post">
+                    <form class="space-y-4 md:space-y-6" action="{{ route('login') }}" method="post">
                         @csrf
                         <div>
                             <label for="email"

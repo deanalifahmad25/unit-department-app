@@ -18,6 +18,7 @@ class Department extends Model
     protected $keyType = 'string';
 
     protected $fillable = [
+        'id',
         'name',
         'unit_id',
         'slug'
